@@ -14,11 +14,8 @@ class InsufficientBalanceException extends Exception {
     @Override
     public String toString() {
         return "You do not have sufficient Balance for the Transaction";
-    }
+                                          }
 }
-
-
-
 class ATM_Methods {
     public void cashWidraw() throws MinimumAmountException, InsufficientBalanceException {
         System.out.println("Enter Amount (Min 500) ");
@@ -63,37 +60,12 @@ class ATM extends ATM_Methods {
     private String ATM_Company;
     private String ATM_Owner;
 
-    public String getBranchName() {
-        return BranchName;
-    }
-    public void setBranchName(String branchName) {
-        BranchName = branchName;
-    }
-
-    public String getATM_Company() {
-        return ATM_Company;
-    }
-
-    public void setATM_Company(String ATM_Company) {
-        this.ATM_Company = ATM_Company;
-    }
-
-    public String getATM_Owner() {
-        return ATM_Owner;
-    }
-
-    public void setATM_Owner(String ATM_Owner) {
-        this.ATM_Owner = ATM_Owner;
-    }
-
 
     public void ATM (){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Your Pin ");
         int Pin = sc.nextInt();
     }
-
-
 
 }
 public class Abstraction_ATM_Example {
